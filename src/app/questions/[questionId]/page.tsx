@@ -10,6 +10,7 @@ import {
 } from "@/redux/bayDin/questionSlice";
 import { useParams } from "next/navigation";
 import Link from "next/link";
+import { Button } from "@material-tailwind/react";
 
 interface pageProps {}
 
@@ -63,6 +64,9 @@ const Page: FC<pageProps> = () => {
           </Link>
         ))}
       </div>
+      <Button>
+        <Link href={`/`}>Back</Link>
+      </Button>
     </main>
   );
 };
